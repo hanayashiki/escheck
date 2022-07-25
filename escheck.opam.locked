@@ -1,0 +1,67 @@
+opam-version: "2.0"
+name: "escheck"
+version: "~dev"
+synopsis: "A short synopsis"
+description: "A longer description"
+maintainer: "Maintainer Name"
+authors: "Author Name"
+license: "LICENSE"
+tags: ["topics" "to describe" "your" "project"]
+homepage: "https://github.com/username/reponame"
+doc: "https://url/to/documentation"
+bug-reports: "https://github.com/username/reponame/issues"
+depends: [
+  "astring" {= "0.8.5"}
+  "base" {= "v0.15.0"}
+  "base-bigarray" {= "base"}
+  "base-bytes" {= "base"}
+  "base-threads" {= "base"}
+  "base-unix" {= "base"}
+  "camlp-streams" {= "5.0.1"}
+  "cmdliner" {= "1.1.1"}
+  "csexp" {= "1.5.1"}
+  "dune" {= "3.4.0"}
+  "dune-build-info" {= "3.4.0"}
+  "dune-configurator" {= "3.4.0"}
+  "either" {= "1.0.0"}
+  "fix" {= "20220121"}
+  "fpath" {= "0.7.3"}
+  "menhir" {= "20220210"}
+  "menhirLib" {= "20220210"}
+  "menhirSdk" {= "20220210"}
+  "ocaml" {= "4.14.0"}
+  "ocaml-base-compiler" {= "4.14.0"}
+  "ocaml-config" {= "2"}
+  "ocaml-options-vanilla" {= "1"}
+  "ocaml-version" {= "3.5.0"}
+  "ocamlbuild" {= "0.14.1"}
+  "ocamlfind" {= "1.9.5"}
+  "ocamlformat" {= "0.24.1"}
+  "ocp-indent" {= "1.8.1"}
+  "odoc-parser" {= "2.0.0"}
+  "re" {= "1.10.4"}
+  "result" {= "1.5"}
+  "seq" {= "0.2.2"}
+  "sexplib0" {= "v0.15.1"}
+  "stdio" {= "v0.15.0"}
+  "topkg" {= "1.0.3"}
+  "uchar" {= "0.0.2"}
+  "uucp" {= "14.0.0"}
+  "uuseg" {= "14.0.0"}
+  "uutf" {= "1.0.2"}
+]
+build: [
+  ["dune" "subst"] {dev}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
+]
+dev-repo: "git+https://github.com/username/reponame.git"

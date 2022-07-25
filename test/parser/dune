@@ -1,0 +1,4 @@
+(executable
+ (name es_parser_test)
+ (modes byte)
+ (libraries ounit2 es_parser))

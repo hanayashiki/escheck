@@ -1,0 +1,4 @@
+(executable
+ (public_name escheck)
+ (name main)
+ (libraries escheck es_parser))
