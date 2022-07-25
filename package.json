@@ -1,0 +1,35 @@
+{
+  "name": "@escheck/tools",
+  "version": "0.0.0",
+  "description": "Yet another ECMAScript type checker in OCaml",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanayashiki/escheck.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "typescript",
+    "type",
+    "checker",
+    "javascript",
+    "compile",
+    "native",
+    "speed",
+    "transpile",
+    "tool",
+    "developer"
+  ],
+  "author": "hanayashiki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hanayashiki/escheck/issues"
+  },
+  "homepage": "https://github.com/hanayashiki/escheck#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

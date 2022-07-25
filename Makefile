@@ -6,3 +6,7 @@ dev-deps :
 .PHONY : test-parser
 test-parser:
 	dune exec ./test/parser/es_parser_test.exe
+
+.PHONY : lock
+lock:
+	opam lock .

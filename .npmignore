@@ -1,0 +1,6 @@
+.git
+_build
+.vscode
+test/
+lib/
+bin/
